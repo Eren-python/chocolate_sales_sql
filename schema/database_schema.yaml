@@ -1,0 +1,83 @@
+database: chocolate_sales
+
+tables:
+  - name: Products
+    description: Lista de productos de chocolate
+    columns:
+      - name: ProductID
+        type: INTEGER
+        primary_key: true
+      - name: Name
+        type: TEXT
+      - name: Category
+        type: TEXT
+      - name: Size
+        type: TEXT
+      - name: Packaging
+        type: TEXT
+
+  - name: Brands
+    description: Marcas de productos
+    columns:
+      - name: BrandID
+        type: INTEGER
+        primary_key: true
+      - name: Name
+        type: TEXT
+      - name: Country
+        type: TEXT
+
+  - name: Countries
+    description: Países donde se distribuyen los productos
+    columns:
+      - name: CountryID
+        type: INTEGER
+        primary_key: true
+      - name: CountryName
+        type: TEXT
+
+  - name: Branches
+    description: Sucursales de venta
+    columns:
+      - name: BranchID
+        type: INTEGER
+        primary_key: true
+      - name: BranchName
+        type: TEXT
+      - name: CountryID
+        type: INTEGER
+        foreign_key:
+          references: Countries(CountryID)
+
+  - name: ProductBrand
+    description: Relación entre productos y marcas
+    columns:
+      - name: ProductID
+        type: INTEGER
+        foreign_key:
+          references: Products(ProductID)
+      - name: BrandID
+        type: INTEGER
+        foreign_key:
+          references: Brands(BrandID)
+
+  - name: Sales
+    description: Ventas registradas por producto y sucursal
+    columns:
+      - name: SaleID
+        type: INTEGER
+        primary_key: true
+      - name: SaleDate
+        type: DATE
+      - name: ProductID
+        type: INTEGER
+        foreign_key:
+          references: Products(ProductID)
+      - name: BranchID
+        type: INTEGER
+        foreign_key:
+          references: Branches(BranchID)
+      - name: Quantity
+        type: INTEGER
+      - name: UnitPrice
+        type: DECIMAL(10,2)
