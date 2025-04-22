@@ -70,6 +70,6 @@ GROUP BY b.Name, p.Name
 ORDER BY b.Name, UnitsSold DESC;
 
 📌 Créditos
-Autora: Eren Torres
-Repositorio académico para la materia de Bases de Datos
+Autora: Erendira Torres
+Repositorio académico para la materia de Introducción a las Bases de Datos en BEDU
 Año: 2025
