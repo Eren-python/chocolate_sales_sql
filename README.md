@@ -19,9 +19,18 @@ Diseñar e implementar un sistema de base de datos que permita:
 
 ## 📁 Estructura del repositorio
 
+## 📁 Estructura del repositorio
 
+```plaintext
 chocolate_sales_sql/
-chocolate_sales_sql/ ├── Chocolate Sales.csv # Dataset original de Kaggle ├── setup_demo.sql # Script para creación de tablas y carga de datos ├── queries.sql # Consultas SQL de análisis ├── schema/ │ └── database_schema.yaml # Esquema de la base en formato YAML ├── diagrams/ │ └── erd.png # Diagrama entidad-relación (ERD) └── README.md # Documentación del proyecto
+├── Chocolate Sales.csv           # Dataset original de Kaggle
+├── setup_demo.sql                # Script para creación de tablas y carga de datos
+├── queries.sql                   # Consultas SQL de análisis
+├── schema/
+│   └── database_schema.yaml      # Esquema de la base en formato YAML
+├── diagrams/
+│   └── erd.png                   # Diagrama entidad-relación (ERD)
+└── README.md                     # Documentación del proyecto
 
 📄 Documentación técnica
 database_schema.yaml
