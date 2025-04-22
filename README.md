@@ -17,7 +17,6 @@ Diseñar e implementar un sistema de base de datos que permita:
 
 ---
 
-## 📁 Estructura del repositorio
 
 ## 📁 Estructura del repositorio
 
