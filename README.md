@@ -19,3 +19,12 @@ Diseñar e implementar un sistema de base de datos que permita:
 
 ## 📁 Estructura del repositorio
 
+## 📄 Documentación técnica
+
+### `database_schema.yaml`
+
+Este archivo describe la estructura de la base de datos en formato YAML. Incluye los nombres de las tablas, sus campos, tipos de datos, claves primarias y relaciones (llaves foráneas).
+
+Su propósito es ofrecer una representación clara y estructurada del modelo relacional implementado, útil tanto para desarrolladores como para documentación técnica o automatización (por ejemplo, generación de diagramas ERD o validaciones).
+
+> 📌 Puedes visualizar este archivo como una "hoja de ruta" que refleja cómo están organizados y relacionados los datos del proyecto.
